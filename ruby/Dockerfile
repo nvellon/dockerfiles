@@ -1,20 +1,11 @@
-FROM ubuntu
+FROM nvellon/base
 
 MAINTAINER Nicolas Vellon <nvellon@gmail.com>
 
-RUN locale-gen en_US.UTF-8
-ENV LANG       en_US.UTF-8
-ENV LC_ALL     en_US.UTF-8
-
-RUN apt-get update
-RUN apt-get upgrade -y
-
-RUN apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
-
-ADD http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz /tmp/
-RUN tar -xzf /tmp/ruby-2.0.0-p247.tar.gz
-RUN (cd ruby-2.0.0-p247/ && ./configure --disable-install-doc)
-RUN (cd ruby-2.0.0-p247/ && make)
-RUN (cd ruby-2.0.0-p247/ && make install)
-RUN rm -rf ruby-2.0.0-p247/
-RUN rm -f /tmp/ruby-2.0.0-p247.tar.gz
+RUN cd /tmp
+RUN wget http://ftp.ruby-lang.org/pub/ruby/stable-snapshot.tar.gz
+RUN tar -xzf stable-snapshot.tar.gz
+RUN (cd "$(ls | grep ruby)" && ./configure --disable-install-doc && make && make install)
+RUN cd /tmp
+RUN rm -Rf "$(ls | grep ruby)"
+RUN rm -f stable-snapshot.tar.gz

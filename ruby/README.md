@@ -6,15 +6,11 @@ Un Dockerfile que crea una imagen con [Ruby][ruby].
 
 ## Imagen
 
-```
-$ sudo docker build -t="ruby" .
-```
+	$ sudo docker build -t nvellon/ruby .
 
 ## Container
 
-```
-$ sudo docker run ruby
-```
+	$ sudo docker run ruby
 
 ## Créditos
 
