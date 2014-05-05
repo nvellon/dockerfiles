@@ -1,8 +1,6 @@
 # docker-base
 
-Un Dockerfile que crea una imagen de base con [ubuntu][ubuntu].
-
-[ruby]: https://www.ubuntu.com
+Un Dockerfile que crea una imagen de base con [ubuntu](https://www.ubuntu.com).
 
 ## Crear Imagen
 
