@@ -8,6 +8,8 @@ Incluye los siguientes componentes:
 - [xdebug](http://xdebug.org/)
 - [PHPUnit](http://phpunit.de/)
 - [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+- [PHPdbg](https://github.com/krakjoe/phpdbg)
+- [OPcache](https://github.com/zendtech/ZendOptimizerPlus)
 
 Basado en las imagenes:
 - [Base](https://github.com/nvellon/dockerfiles/tree/master/base).
