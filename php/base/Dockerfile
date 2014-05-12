@@ -24,6 +24,3 @@ RUN cd /usr/src && git clone https://github.com/sebastianbergmann/phpunit.git
 
 # Clone PHP Code Sniffer
 RUN cd /usr/src && git clone https://github.com/squizlabs/PHP_CodeSniffer.git
-
-# Clone Composer
-RUN cd /usr/src && git clone https://github.com/composer/composer.git
