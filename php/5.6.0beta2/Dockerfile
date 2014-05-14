@@ -3,7 +3,7 @@ FROM nvellon/base
 MAINTAINER Nicolas Vellon <nvellon@gmail.com>
 
 RUN sudo apt-get update
-RUN sudo apt-get install -y build-essential libcurl4-openssl-dev autoconf libpcre3 libpcre3-dev
+RUN sudo apt-get install -y libcurl4-openssl-dev autoconf libpcre3 libpcre3-dev
 RUN sudo apt-get install -y libsqlite3-dev sqlite3 libmysqlclient-dev libreadline-dev libzip-dev libxslt1-dev
 RUN sudo apt-get install -y libicu-dev libmcrypt-dev libmhash-dev libpcre3-dev libjpeg-dev libpng12-dev libfreetype6-dev libbz2-dev libxpm-dev
 
