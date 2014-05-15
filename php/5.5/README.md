@@ -15,8 +15,8 @@ Basado en las imagenes:
 
 ## Crear Imagen
 
-	$ sudo docker build -t nvellon/php55 .
+	$ sudo docker build -t nvellon/php-5_5 .
 
 ## Ejecución
 
-	sudo docker run -i -t nvellon/php55 /bin/bash
+	sudo docker run -i -t nvellon/php-5_5 /bin/bash
