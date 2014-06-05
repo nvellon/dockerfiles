@@ -1,15 +1,12 @@
 # docker-php
 
-Serie de Dockerfiles para crear imagenes con diferentes versiones de PHP, compiladas desde las fuentes en Github.
+Serie de Dockerfiles para crear imagenes con diferentes versiones de PHP, compiladas desde las fuentes.
 
 La estructura de dependecias sería la siguiente:
 
-	nvellon/base
-	    nvellon/php-base
-	    	nvellon/php-55
-	    	nvellon/php-54
-	    	nvellon/php-*
+    nvellon/base [ubuntu / 14.04]
+        nvellon/php-5.5.13
+        nvellon/php-5.4.29
+        nvellon/php-*
 
-Para cada versión específica, el Dockerfile solo necesita hacer git-checkout al branch correspondiente a la versión y compilar.
-
-NOTA: Por el momento el dockerfile de v5.6.0beta2 no sigue este proceso.
+Incluye otras herramientas de desarrollo como Composer, PHP_CodeSniffer y PHPUnit, entre otras.
